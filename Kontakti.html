@@ -1,47 +1,89 @@
 <!DOCTYPE html>
 <html lang="lv">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Debesu Spārni - Lidojumi</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debesu Spārni</title>
+    <style>
+        body
+      <nav>
+        <ul>
+          <li><a href="index.html">ienākt</a></li>
+          <li><a href="index.html#par-mums">Par mums</a></li>
+          <li><a href="Maršruti.html">Maršruti</a></li>
+          <li><a href="Kontakti.html">Kontakti</a></li>
+          <li><a href="index.html#atsauksmes">Atsauksmes</a></li>
+        </ul>
+      </nav>
+      {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .header {
+            text-align: center;
+            padding: 50px;
+            background: #f1f1f1;
+        }
+        .header img {
+            width: 100px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content img {
+            width: 100%;
+            max-width: 300px;
+        }
+        .content div {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Ienākt</a></li>
-      <li><a href="#par-mums">Par mums</a></li>
-      <li><a href="Maršruti.html">Maršruti</a></li>
-      <li><a href="Kontakti.html">Kontakti</a></li>
-      <li><a href="#atsauksmes">Atsauksmes</a></li>
-    </ul>
-  </nav>
-
-  <header>
-    <div class="logo">
-      <img src="DEBESU SPRNI Logo - Original - 5000x5000.png" alt="Logo">
-        <h1>DEBESU SPĀRNI</h1>
+    <div class="navbar">
+        <a href="#login">Ienākt</a>
+        <a href="#about">Par mums</a>
+        <a href="#routes">Maršruti</a>
+        <a href="#contacts">Kontakti</a>
+        <a href="#reviews">Atsauksmes</a>
+    </div>
+    <div class="header">
+        <img src="logo.png" alt="Debesu Spārni Logo">
+        <h1>Debesu Spārni</h1>
         <p>Lido droši</p>
-      </div>
     </div>
-    <div class="guarantee-text">
-      <h2>Garantēts drošs, ātrs un lēts lidojums ar Debesu Spārņiem</h2>
+    <div class="content">
+        <div>
+            <h2>Eiropas lielākā gaisa ceļojumu kompānija</h2>
+            <img src="plane1.jpg" alt="Airplane">
+            <p>Ērts lidojums tikai spiediena attālumā</p>
+        </div>
+        <div>
+            <h2>Par mums</h2>
+            <p>Mēs palīdzam noorganizēt jums lidojumu, ar jūsu izvēlēto lidmašīnu un ceļojumu</p>
+            <p>Varat izvēlēties lidot ar privātām vai komerciālām lidmašīnām</p>
+            <img src="plane2.jpg" alt="Person boarding airplane">
+        </div>
+        <div>
+            <p>Garantēts drošs, ātrs un lēts lidojums ar Debesu Spārniem</p>
+        </div>
     </div>
-  </div>
-
-  <div class="content-grid">
-    <div class="info-block">
-      <h2>Eiropas lielākā gaisa ceļojumu kompānija</h2>
-      <img src="planes.jpg" alt="Lidmašīnas">
-      <p>Ērts lidojums tikai spiediena attālumā</p>
-    </div>
-
-    <div class="info-block pink">
-      <h2>Par mums</h2>
-      <p>Mēs palīdzam noorganizēt jums lidojumu, ar jūsu izvēlēto lidmašīnu un ceļojumu</p>
-      <img src="passenger.jpg" alt="Pasažieris">
-      <p>Varat izvēlēties lidot ar privātām vai komerciālām lidmašīnām</p>
-    </div>
-  </div>
 </body>
 </html>
