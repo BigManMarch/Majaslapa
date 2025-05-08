@@ -9,8 +9,7 @@
         <div class="navbar">
             <a href="login.html">Ienākt</a>
             <a href="index.html#par-mums">Par mums</a>
-            <a href="Maršruti.html">Maršruti</a>
-            <a href="Kontakti.html">Kontakti</a>
+             <a href="Galerija.html">Galerija</a>
         </div>
       {
             font-family: Arial, sans-serif;
@@ -57,28 +56,36 @@
     <div class="navbar">
         <a href="login.html">Ienākt</a>
         <a href="index.html">Par mums</a>
-        <a href="Kontakti.html">Galerija</a>
+        <a href="Galerija.html">Galerija</a>
     </div>
-    <div class="header">
-        <img src="logo.png" alt="Debesu Spārni Logo">
-        <h1>Debesu Spārni</h1>
-        <p>Lido droši</p>
-    </div>
-    <div class="content">
-        <div>
-            <h2>Eiropas lielākā gaisa ceļojumu kompānija</h2>
-            <img src="plane1.jpg" alt="Airplane">
-            <p>Ērts lidojums tikai spiediena attālumā</p>
+    <h1>Galerija</h1>
+    <div class="gallery-container">
+        <div class="gallery-view">
+            <img id="currentImage" src="airplane city-3702676_640.jpg">
+            <button class="prev" onclick="prevImage()">&#10094;</button>
+            <button class="next" onclick="nextImage()">&#10095;</button>
         </div>
-        <div>
-            <h2>Par mums</h2>
-            <p>Mēs palīdzam noorganizēt jums lidojumu, ar jūsu izvēlēto lidmašīnu un ceļojumu</p>
-            <p>Varat izvēlēties lidot ar privātām vai komerciālām lidmašīnām</p>
-            <img src="plane2.jpg" alt="Person boarding airplane">
+        <div class="thumbnails">
+            <img src="airplane sky-7873308_640.jpg" onclick="showImage(0)" alt="Thumbnail 1">
+            <img src="cockpit-4598188_640.jpg" onclick="showImage(1)" alt="Thumbnail 2">
+            <img src="airplane-window-7443196_640.jpg" onclick="showImage(2)" alt="Thumbnail 3">
+            <img src="airplane-6867678_640.jpg" onclick="showImage(3)" alt="Thumbnail 4">
+            <img src=""
         </div>
-        <div>
-            <p>Garantēts drošs, ātrs un lēts lidojums ar Debesu Spārniem</p>
+
+    <script>
+        function changeImage(element) {
+            document.getElementById('mainImage').src = element.src;
+        }
+    </script>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Kontakti</h3>
+                <p>Tālr.: +371 87352187</p>
+                <p>E-pasts: debesu.sparni@gmail.com</p>
+            </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
