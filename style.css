@@ -1,31 +1,98 @@
-html {
-  height: 300%;
-  width: 300%;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('airplane-window-7443196_640.jpg');
+    background-attachment: fixed;
 }
+
+.navbar {
+    background-color: #000;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    background-color: #1a237e;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
 .logo {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    gap: 20px;
 }
 
 .logo img {
-    width: 200px;
+    width: 150px;
     height: auto;
 }
 
 .logo h1 {
-    color: #1a237e; /* Deep blue color */
+    color: #1a237e;
     font-size: 2.5em;
-    margin: 10px 0;
-    font-family: Arial, sans-serif;
-    text-transform: uppercase;
+    margin: 0;
 }
 
-.logo p {
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.content-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.content-box img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.content-box h2 {
     color: #1a237e;
-    font-size: 1.5em;
-    margin: 5px 0;
-    letter-spacing: 3px;
-    font-family: Arial, sans-serif;
+    margin-bottom: 15px;
+}
+
+.content-box p {
+    color: #333;
+    line-height: 1.6;
+}
+
+footer {
+    background: #000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.slogan {
+    font-style: italic;
+    color: #1a237e;
+    text-align: center;
+    margin: 10px 0;
 }
